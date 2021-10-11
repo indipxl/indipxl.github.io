@@ -29,15 +29,13 @@ function BookNow(userName, userEmail, userPax, userRemarks) {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
-            "Content-Type": "application/jason"
+            "Content-Type": "application/json"
         }
     })
         .then((response) => response.json())
         .then(json => {
             // Do something with object
             console.log(json.booking);
-            if(json.booking.length == 1) {
-                alert(json.booking.name + " added in the list!")
-            }
+            alert(json.booking.name + " added in the list!")
         });
 }
