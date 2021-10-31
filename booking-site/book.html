@@ -30,7 +30,7 @@
                         <a href="book.html" class="nav-link">Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a href="list.html" class="nav-link">Cancel booking</a>
+                        <a href="delete.html" class="nav-link">Cancel booking</a>
                 </ul>
 
             </nav>
@@ -41,20 +41,24 @@
         <div class="container">
             <form action="" class="form">
                 <div class="input-group">
-                    <label for="destination" class="input-label">Destination</label>
-                    <input type="text" class="input" id="destination">
+                    <label for="userName" class="input-label">Name</label>
+                    <input type="text" class="input" id="userName">
                 </div>
                 <div class="input-group">
-                    <label for="checkIn" class="input-label">Check in</label>
-                    <input type="date" class="input" id="checkIn">
+                    <label for="userEmail" class="input-label">Email</label>
+                    <input type="text" class="input" id="userEmail">
                 </div>
                 <div class="input-group">
-                    <label for="checkOut" class="input-label">Check out</label>
-                    <input type="date" class="input" id="checkOut">
+                    <label for="sDate" class="input-label">Check in</label>
+                    <input type="date" class="input" id="sDate">
                 </div>
                 <div class="input-group">
-                    <label for="adults" class="input-label">Adults</label>
-                    <select name="" id="adults" class="options">
+                    <label for="eDate" class="input-label">Check out</label>
+                    <input type="date" class="input" id="eDate">
+                </div>
+                <div class="input-group">
+                    <label for="userPax" class="input-label">Pax</label>
+                    <select name="" id="userPax" class="options">
                         <option value="0">0</option>
                         <option value="0">1</option>
                         <option value="0">2</option>
@@ -64,23 +68,30 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <label for="children" class="input-label">Children</label>
-                    <select name="" id="children" class="options">
-                        <option value="0">0</option>
-                        <option value="0">1</option>
-                        <option value="0">2</option>
-                        <option value="0">3</option>
-                        <option value="0">4</option>
-                        <option value="0">5</option>
+                    <label for="roomType" class="input-label">Room Type</label>
+                    <select name="" id="roomType" class="options">
+                        <option value="0">Pick your stay</option>
+                        <option value="0">Ganang Villa</option>
+                        <option value="0">Aki Lounge</option>
+                        <option value="0">Tenom Deluxe</option>
+                        <option value="0">Kibunut Suites</option>
+
                     </select>
                 </div>
+
+                <div class="input-group">
+                      <label for="userRemarks">Remarks</label>
+                      <textarea class="form-control" id="userRemarks" rows="1"
+                        placeholder="Example: Extra mattress & water bottles!"></textarea>
+                </div>
+
                 <button type="submit" class="btn form-btn btn-purple" id="bookNow">Book Now
                     <span class="dots"><i class="fas fa-ellipsis-h"></i> </span>
                 </button>
             </form>
         </div>
     </section>
-    <script src="js/main.js"></script>
+    <script src="js/book.js"></script>
 </body>
 
 </html>
