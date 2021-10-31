@@ -45,9 +45,9 @@ function bookNow(userName, userEmail, sDate, eDate, roomType, userPax, userRemar
     console.log(userPax)
     console.log(userRemarks)
     */
-    let url = 'https://api.sheety.co/1ad25830927a93168640bade1ef761fb/quickie/bookings';
+    let url = 'https://api.sheety.co/1ad25830927a93168640bade1ef761fb/bookingSite/daBooks';
     let body = {
-        bookings: {
+        daBooks: {
             name: userName,
             email: userEmail,
             pax: userPax,
