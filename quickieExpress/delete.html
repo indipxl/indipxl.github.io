@@ -2,46 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quickie Express</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickie Express</title>
 
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link rel="stylesheet" href="styles.css">
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<!-- nav bar -->
+  <!-- nav bar -->
 
-<header class="header">
-  <div class="container">
+  <header class="header">
+    <div class="container">
       <nav class="nav">
-          <a href="index.html" class="logo">
-              <img src="./images/Quickie Express (1).png" alt="">
-          </a>
-          <div class="hamburger-menu">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-times"></i>
-          </div>
+        <a href="index.html" class="logo">
+          <img src="./images/Quickie Express (1).png" alt="">
+        </a>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
 
-          <ul class="nav-list">
-              <li class="nav-item">
-                  <a href="index.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a href="book.html" class="nav-link">Booking</a>
-              </li>
-              <li class="nav-item">
-                  <a href="delete.html" class="nav-link">Manage Bookings</a>
-              </li>
-          </ul>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="book.html" class="nav-link">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a href="delete.html" class="nav-link">Manage Bookings</a>
+          </li>
+        </ul>
       </nav>
-  </div>
-</header>
+    </div>
+  </header>
 
   <!-- carousel -->
   <div class="carousel-inner" role="listbox" style="height: fit-content;">
@@ -86,82 +86,83 @@
   </div>
   </div>
 
-  	<!--JumboTron-->
-	<div class="jumbotron" style="background-color: blanchedalmond; margin-bottom: 0%;">
-		<h1 class="display-4" style="color:darkred;">Manage Reservations</h1>
-		<p class="lead">Made a mistake? Don't fret! We allow changes to be made up to 3 days before your stay!</p>
-		<hr class="my-4">
-		<h6>**Do note that extra charges may apply</h6>
-	</div>
+  <!--JumboTron-->
+  <div class="jumbotron" style="background-color: blanchedalmond; margin-bottom: 0%;">
+    <h1 class="display-4" style="color:darkred;">Manage Reservations</h1>
+    <p class="lead">Made a mistake? Don't fret! We allow changes to be made up to 3 days before your stay!</p>
+    <hr class="my-4">
+    <h6>**Do note that extra charges may apply</h6>
+  </div>
 
-	<!--Manage Reservations-->
-	<div class="row" style="background-color: blanchedalmond;">
-		<div class="col boxpadding2">
-			<button type="button" class="btn btn-primary" id="refreshNow" style="background-color: darkseagreen;">Manage my reservations</button>
-			<table class="table table-striped" id="bookingNameList">
-				<thead>
-					<tr>
-						<th scope="col">Id</th>
-						<th scope="col">Name</th>
-						<th scope="col">Room type</th>
-						<th scope="col">Pax</th>
-						<th scope="col">Booking Date</th>
-						<th scope="col">Task</th>
-					</tr>
-				</thead>
-				<tbody>
-				</tbody>
-			</table>
+  <!--Manage Reservations-->
+  <div class="row" style="background-color: blanchedalmond;">
+    <div class="col boxpadding2">
+      <button type="button" class="btn btn-primary" id="refreshNow" style="background-color: darkseagreen;">Manage my
+        reservations</button>
+      <table class="table table-striped" id="bookingNameList">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Room type</th>
+            <th scope="col">Pax</th>
+            <th scope="col">Booking Date</th>
+            <th scope="col">Task</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
-        	<!--Footer-->
-            <footer>
-                <div class="container-fluid padding">
-                    <div class="row text-center">
-        
-                        <div class="col-md-4">
-                            <hr class="light">
-                            <p>Reach Us</p>
-                            <hr class="light">
-                            <p>333-333-3333</p>
-                            <p>customerservice@helioshotel.com</p>
-                            <p>33, St.Santorini</p>
-                            <p>City, Greece, 33333</p>
-                        </div>
-        
-                        <div class="col-md-4">
-                            <hr class="light">
-                            <p>Office Hours</p>
-                            <hr class="light">
-                            <p>Weekday: 9am - 5pm</p>
-                            <p>Weekends: 10am - 4pm</p>
-                        </div>
-        
-                        <div class="col-md-4">
-                            <hr class="light">
-                            <p>Social Media</p>
-                            <hr class="light">
-                            <p>Facebook</p>
-                            <p>Instagram</p>
-                            <p>Twitter</p>
-                        </div>
-                        <div class="col-12">
-                            <hr class="light-100">
-                            <h5>helioshotel.com</h5>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+  <!--Footer-->
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-        <script src="js/delete.js"></script>
+        <div class="col-md-4">
+          <hr class="light">
+          <p>Contact Us</p>
+          <hr class="light">
+          <p>088 676 6676</p>
+          <p>customerservice@quickie.express</p>
+          <p>88, Anywhere St</p>
+          <p>Sabah, Malaysia</p>
+        </div>
+
+        <div class="col-md-4">
+          <hr class="light">
+          <p>We are open everyday!</p>
+          <hr class="light">
+          <p>24 hours</p>
+          <p>365 days a year</p>
+        </div>
+
+        <div class="col-md-4">
+          <hr class="light">
+          <p>Follow us!</p>
+          <hr class="light">
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Twitter</p>
+        </div>
+        <div class="col-12">
+          <hr class="light-100">
+          <h5>&copy;quickieexpress.com</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="js/delete.js"></script>
 </body>
 
 </html>
